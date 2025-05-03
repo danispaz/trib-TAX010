@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">Suspensão e Imunidade de PIS/COFINS nos Fretes com Mercadorias Destinadas à Exportação
+
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+        Aplica a suspensão ou imunidade de PIS/COFINS sobre os fretes vinculados a mercadorias destinadas à exportação, garantindo economia tributária e conformidade com a legislação vigente.    </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">TAX010</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Gestão Tributária</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-cow icon"></i>Classificação BCG</label>
+      <div class="form-value">Vaca Leiteira</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+        <ol data-start="102" data-end="1247">
+          <li data-start="102" data-end="306" class="" style="">
+          <p data-start="105" data-end="306" class=""><strong data-start="105" data-end="152">Mapeamento das operações de frete elegíveis</strong><br data-start="152" data-end="155">
+          Identificação das cargas com destino à exportação que permitem aplicação da suspensão ou imunidade de PIS/COFINS, garantindo foco nas oportunidades.</p>
+          </li>
+          <li data-start="308" data-end="493" class="" style="">
+          <p data-start="311" data-end="493" class=""><strong data-start="311" data-end="349">Validação e organização documental</strong><br data-start="349" data-end="352">
+          Coleta e conferência dos documentos fiscais e contábeis necessários para comprovação do benefício, assegurando a base técnica da operação.</p>
+          </li>
+          <li data-start="495" data-end="681" class="" style="">
+          <p data-start="498" data-end="681" class=""><strong data-start="498" data-end="542">Análise legal e enquadramento tributário</strong><br data-start="542" data-end="545">
+          Estudo da legislação vigente para aplicação segura dos benefícios, com orientação clara e personalizada conforme o regime do cliente.</p>
+          </li>
+          <li data-start="683" data-end="864" class="" style="">
+          <p data-start="686" data-end="864" class=""><strong data-start="686" data-end="720">Cálculo da economia tributária</strong><br data-start="720" data-end="723">
+          Estimativa da redução de PIS/COFINS por operação, demonstrando o impacto financeiro direto e sustentando a decisão estratégica do cliente.</p>
+          </li>
+          <li data-start="866" data-end="1052" class="" style="">
+          <p data-start="869" data-end="1052" class=""><strong data-start="869" data-end="917">Aplicação do benefício e suporte operacional</strong><br data-start="917" data-end="920">
+          Apoio na implementação prática da suspensão ou imunidade nas rotinas fiscais, incluindo retificação de obrigações, se necessário.</p>
+          </li>
+          <li data-start="1054" data-end="1247" class="" style="">
+          <p data-start="1057" data-end="1247" class=""><strong data-start="1057" data-end="1094">Monitoramento e ajustes contínuos</strong><br data-start="1094" data-end="1097">
+          Acompanhamento periódico das operações e evolução legal, garantindo conformidade, manutenção dos benefícios e identificação de novas oportunidades.</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+        <ol data-start="110" data-end="629">
+          <li data-start="110" data-end="184" class="">
+          <p data-start="113" data-end="184" class="">Pagamento indevido de PIS/COFINS sobre fretes vinculados à exportação</p>
+          </li>
+          <li data-start="185" data-end="272" class="">
+          <p data-start="188" data-end="272" class="">Desconhecimento ou aplicação incorreta dos regimes de suspensão e imunidade fiscal</p>
+          </li>
+          <li data-start="273" data-end="354" class="">
+          <p data-start="276" data-end="354" class="">Perda de competitividade por custos tributários elevados na cadeia logística</p>
+          </li>
+          <li data-start="355" data-end="457" class="">
+          <p data-start="358" data-end="457" class="">Falta de controle e rastreabilidade dos documentos fiscais exigidos para comprovação do benefício</p>
+          </li>
+          <li data-start="458" data-end="543" class="">
+          <p data-start="461" data-end="543" class="">Risco de autuação fiscal por ausência de conformidade ou documentação incompleta</p>
+          </li>
+          <li data-start="544" data-end="629" class="">
+          <p data-start="547" data-end="629" class="">Oportunidades de economia tributária não identificadas nas operações de transporte</p>
+          </li>
+          </ol>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+        <ol data-start="108" data-end="475">
+          <li data-start="108" data-end="187" class="">
+          <p data-start="111" data-end="187" class="">Redução efetiva dos valores pagos de PIS/COFINS sobre fretes de exportação</p>
+          </li>
+          <li data-start="188" data-end="259" class="">
+          <p data-start="191" data-end="259" class="">Aumento da margem financeira nas operações logísticas exportadoras</p>
+          </li>
+          <li data-start="260" data-end="326" class="">
+          <p data-start="263" data-end="326" class="">Conformidade fiscal assegurada com base na legislação vigente</p>
+          </li>
+          <li data-start="327" data-end="403" class="">
+          <p data-start="330" data-end="403" class="">Maior controle e organização documental para comprovação dos benefícios</p>
+          </li>
+          <li data-start="404" data-end="475" class="">
+          <p data-start="407" data-end="475" class="">Identificação contínua de novas oportunidades de economia tributária</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+        <ol data-start="96" data-end="544">
+          <li data-start="96" data-end="173" class="" style="">
+          <p data-start="99" data-end="173" class="">Quando a empresa inicia ou amplia operações de exportação de mercadorias</p>
+          </li>
+          <li data-start="174" data-end="264" class="" style="">
+          <p data-start="177" data-end="264" class="">Ao identificar aumento no volume de contratação de fretes rodoviários para exportação</p>
+          </li>
+          <li data-start="265" data-end="342" class="" style="">
+          <p data-start="268" data-end="342" class="">Durante auditorias fiscais internas ou revisões de processos tributários</p>
+          </li>
+          <li data-start="343" data-end="447" class="" style="">
+          <p data-start="346" data-end="447" class="">Na análise de demonstrativos que indicam pagamento recorrente de PIS/COFINS em fretes de exportação</p>
+          </li>
+          <li data-start="448" data-end="544" class="" style="">
+          <p data-start="451" data-end="544" class="">Ao prospectar empresas do setor logístico ou exportador com regime de Lucro Real ou Presumido</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">O serviço de Suspensão e Imunidade de PIS/COFINS nos Fretes com Mercadorias Destinadas à Exportação entrega economia tributária real e contínua para empresas exportadoras que contratam transporte de cargas. Por meio de um processo técnico e validado legalmente, realizamos a análise, organização e aplicação do benefício, garantindo redução de custos, segurança fiscal e ganho competitivo. Nossa abordagem é consultiva, focada em resultados mensuráveis e sustentáveis.
+
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+     
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Produto Complementar</th>
+              <th>Justificativa da Conexão</th>
+              <th>Área Responsável</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Imunidade de ISS/ICMS nos fretes destinados à exportação</td>
+              <td>Atua sobre os mesmos fretes do serviço principal, ampliando o benefício para outros tributos.</td>
+              <td>Jurídico</td>
+            </tr>
+            <tr>
+              <td>B.I. – Implantação Sistema Atua</td>
+              <td>Ideal para transportadoras que desejam monitorar performance, indicadores logísticos e apuração tributária com precisão.</td>
+              <td>Business Intelligence</td>
+            </tr>
+            <tr>
+              <td>BPO Contábil e Tributário – Transportes</td>
+              <td>Estrutura o ambiente contábil e fiscal de transportadoras, essencial para validação e execução correta dos benefícios.</td>
+              <td>Contabilidade</td>
+            </tr>
+            <tr>
+              <td>Estruturação de Dívidas</td>
+              <td>Pode ser ofertado para empresas com alto passivo fiscal ou dificuldade de caixa, que se beneficiariam da economia gerada pela imunidade.</td>
+              <td>Soluções Financeiras</td>
+            </tr>
+            <tr>
+              <td>Compliance Trabalhista e Previdenciário</td>
+              <td>Ajuda empresas com frota própria a manter conformidade e reduzir riscos com motoristas e encargos trabalhistas, sinérgico no setor de transportes.</td>
+              <td>Consultoria Empresarial</td>
+            </tr>
+            <tr>
+              <td>Crédito de ICMS sobre os Insumos do Transporte</td>
+              <td>Complementa a economia de PIS/COFINS ao ampliar o crédito de ICMS em itens como combustível, pneus e manutenção.</td>
+              <td>Jurídico</td>
+            </tr>
+            <tr>
+              <td>Recuperação de Tributos – PIS / COFINS (Revisão de Insumos)</td>
+              <td>Amplia o escopo da economia fiscal revisando outros pontos de incidência indevida desses tributos.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Auditoria de Obrigações Acessórias</td>
+              <td>Garante que os SPEDs e obrigações estejam em conformidade para suportar a imunidade aplicada, evitando passivos.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Consultoria e Assessoria no Requerimento de Depreciação Acelerada</td>
+              <td>Estratégia fiscal complementar para empresas que investem em frota ou ativos logísticos, aumentando o ganho tributário.</td>
+              <td>Gestão Tributária</td>
+            </tr>
+            <tr>
+              <td>Captação, Renegociação e Gestão de Recursos</td>
+              <td>Empresas com fluxo comprometido podem se beneficiar da economia gerada pela imunidade e de apoio para reestruturação financeira.</td>
+              <td>Consultoria Empresarial</td>
+            </tr>
+            <tr>
+              <td>Imunidade nas armazenagens</td>
+              <td>Complementa a cadeia logística ao garantir imunidade sobre os serviços de armazenagem envolvidos na exportação.</td>
+              <td>Jurídico</td>
+            </tr>
+            <tr>
+              <td>BPO Paralegal</td>
+              <td>Auxilia na emissão e controle das CNDs e regularizações necessárias para usufruto do benefício tributário com segurança.</td>
+              <td>Contabilidade/Paralegal</td>
+            </tr>
+            <tr>
+              <td>Planejamento Orçamentário e Fluxo de Caixa</td>
+              <td>A economia obtida com o serviço de imunidade pode ser incorporada ao planejamento financeiro da empresa para expansão ou ajustes estratégicos.</td>
+              <td>Consultoria Empresarial</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real e Lucro Presumido</div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Êxito ou Recorrente</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Nacional</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Faturamento com benefício 200k Real e 500k Presumido (Mensal)</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+          <ol data-start="112" data-end="527">
+            <li data-start="112" data-end="167" class="">
+            <p data-start="115" data-end="167" class="">XML dos CTEs vinculados às operações de exportação</p>
+            </li>
+            <li data-start="168" data-end="213" class="">
+            <p data-start="171" data-end="213" class="">SPED Contribuições do período de análise</p>
+            </li>
+            <li data-start="214" data-end="276" class="">
+            <p data-start="217" data-end="276" class="">SPED ICMS/IPI com detalhamento das saídas para exportação</p>
+            </li>
+            <li data-start="277" data-end="343" class="">
+            <p data-start="280" data-end="343" class="">Demonstrativos contábeis que comprovem receitas de exportação</p>
+            </li>
+            <li data-start="344" data-end="431" class="">
+            <p data-start="347" data-end="431" class="">Dossiê ou planilha com a relação de fretes contratados para mercadorias exportadas</p>
+            </li>
+            <li data-start="432" data-end="527" class="">
+            <p data-start="435" data-end="527" class="">Contrato de prestação de serviços de transporte, quando houver vínculo direto com exportador</p>
+            </li>
+            </ol>
+                </div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value"> Transporte </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+                  <table class="styled-table">
+                    <thead>
+                      <tr>
+                        <th>Objeção</th>
+                        <th>O que o cliente quer dizer</th>
+                        <th>Como contornar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>"Mas a gente já emite CTE para exportação, então deve estar automático isso, né?"</td>
+                        <td>Acredita que o benefício já é aplicado automaticamente pelo fato do frete estar vinculado a uma exportação.</td>
+                        <td>“Na prática, a Receita exige que esse vínculo esteja devidamente documentado e comprovado, e isso raramente acontece de forma automática. Nós garantimos que a estrutura documental e fiscal esteja 100% em conformidade para que a suspensão ou imunidade se aplique de fato.”</td>
+                      </tr>
+                      <tr>
+                        <td>"Isso aí é só pra quem é exportador direto, né? A gente só transporta."</td>
+                        <td>Acha que o benefício é exclusivo para quem exporta, e não para quem presta o serviço de frete.</td>
+                        <td>“Esse benefício também se aplica ao transportador, desde que o serviço de transporte esteja diretamente vinculado a uma operação de exportação. Inclusive, a maior parte dos nossos clientes são transportadoras que prestam serviço para exportadores.”</td>
+                      </tr>
+                      <tr>
+                        <td>"Não vale a pena o esforço, o valor do frete é baixo e o imposto é proporcional."</td>
+                        <td>Está minimizando o impacto financeiro por desconhecer o volume acumulado ou o potencial de crédito/recuperação.</td>
+                        <td>“Entendo. O ponto é que essa economia se acumula mês a mês, e a maioria dos nossos clientes fica surpresa com o valor final. Podemos fazer um levantamento rápido com os últimos XMLs de CTE pra mostrar o potencial real de economia.”</td>
+                      </tr>
+                      <tr>
+                        <td>"Nosso SPED já está certinho, não quero mexer nisso e gerar inconsistência."</td>
+                        <td>Tem medo de alterar algo que já está “funcionando” e gerar risco de fiscalização.</td>
+                        <td>“Nosso trabalho não altera a estrutura do SPED original — a gente valida e estrutura a documentação que comprova o direito ao benefício. Atuamos de forma conservadora e alinhada com a legislação vigente, justamente para blindar a operação.”</td>
+                      </tr>
+                      <tr>
+                        <td>"A gente tentou isso no passado e deu problema na Receita, nem quisemos insistir."</td>
+                        <td>Já teve uma experiência negativa por tentativa mal orientada, ou com documentação inconsistente.</td>
+                        <td>“Esse tipo de benefício precisa de critérios técnicos bem amarrados. Atuamos com um processo validado que inclui auditoria prévia, cruzamento documental e rastreabilidade dos dados. O erro não é o benefício — é a forma como ele é aplicado.”</td>
+                      </tr>
+                      <tr>
+                        <td>"Não adianta, nosso cliente (exportador) não fornece todos os documentos do embarque."</td>
+                        <td>Sente que depende de terceiros e teme não conseguir comprovar o vínculo exigido pela Receita.</td>
+                        <td>“Isso é comum — por isso, ajudamos você a estruturar um processo mínimo de rastreabilidade e checklist documental com seus clientes. Temos modelos prontos que facilitam essa coleta e garantem segurança para sua operação.”</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                                    
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                        <li data-start="107" data-end="173" class="" style="">
+                        <p data-start="109" data-end="173" class=""><strong data-start="109" data-end="129">Influenciadores:</strong> Consultor, Controller, Gerente Financeiro</p>
+                        </li>
+                        <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> CFO, Proprietários, Sócios</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional une especialização no setor de transportes com domínio técnico-fiscal para garantir a correta aplicação da suspensão ou imunidade de PIS/COFINS nos fretes vinculados à exportação. Nosso diferencial está na capacidade de identificar com precisão as operações elegíveis, comprovar o vínculo com a exportação e estruturar toda a documentação exigida pela Receita Federal.
+
+        Somos especialistas em operações logísticas e tributação do transporte, e conhecemos a fundo as particularidades regionais e interestaduais, o que nos permite atuar de forma eficaz em todo o território nacional. Nossa entrega inclui parecer técnico, mapeamento de riscos, análise de documentos fiscais e logísticos, e orientação prática para aplicação segura do benefício.
+        
+        Com a Funcional, o cliente reduz tributos sobre o frete com segurança jurídica, rastreabilidade e apoio completo — da identificação ao compliance final.
+        
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
